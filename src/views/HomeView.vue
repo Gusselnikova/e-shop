@@ -25,7 +25,7 @@ import GoShopBtn from "@/components/Shared/GoShopBtn.vue"
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		max-height: calc(100vh - 400px);
+		max-height: calc(100vh - 300px);
 
 		@media (max-width: map-get($grid-breakpoints, md)) {
 			flex-direction: column;
