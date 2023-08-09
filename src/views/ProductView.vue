@@ -1,10 +1,5 @@
 <template>
-	<div
-		v-if="!isProductLoaded"
-		class="product-view__loader"
-	>
-		<loader-overlay/>
-	</div>
+	<loader-overlay v-if="!isProductLoaded"/>
 
 	<div v-else>
 		<product-main-info
@@ -47,13 +42,6 @@ onMounted(async () => {
 
 <style lang="scss" scoped>
 .product-view {
-	&__loader {
-		position: fixed;
-		left: 0;
-		right: 0;
-		top: 50vh;
-	}
-
 	&__main-info {
 		margin-bottom: 50px;
 	}

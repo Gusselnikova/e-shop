@@ -6,13 +6,14 @@
 			<div class="cart-summary__content">
 				<div class="cart-summary__total">
 					<span class="text-overline">Order total:</span>
+
 					<span class="cart-summary__price">${{ totalPrice }}</span>
 				</div>
 
 				<v-btn
 					color="primary"
 					block
-					@click="createOrder"
+					@click="$emit('click-place-order')"
 				>
 					Place order
 				</v-btn>
@@ -23,26 +24,11 @@
 
 <script setup lang="ts">
 import {computed} from "vue";
-import {useRouter} from "vue-router/composables";
 import {useCartStore} from "@/application/cart";
-import OrderApiServiceAsSingleton from "@/infrastructure/order/OrderApiServiceAsSingleton";
 
 const cart = useCartStore()
-const router = useRouter()
 
 const totalPrice = computed((): number => cart.items.reduce((accum, value) => accum + value.price, 0))
-
-async function createOrder() {
-	const orderId = await OrderApiServiceAsSingleton.create()
-	await cart.clear()
-
-	router.push({
-		name: 'order-created',
-		params: {
-			id: orderId
-		}
-	})
-}
 </script>
 
 <style lang="scss" scoped>

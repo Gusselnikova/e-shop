@@ -15,6 +15,8 @@
 		<div class="text-body-1">
 			Thank you for your order. We will send you an email notification when your order is ready to be shipped.
 		</div>
+
+		<go-shop-btn class="order-created__btn"/>
 	</div>
 </template>
 
@@ -22,6 +24,8 @@
 import { mdiCheckCircleOutline } from '@mdi/js';
 import {computed} from "vue";
 import { useRoute } from "vue-router/composables"
+
+import GoShopBtn from "@/components/Shared/GoShopBtn.vue"
 
 const route = useRoute()
 
@@ -45,6 +49,10 @@ const orderId = computed((): string => route.params.id)
 	&__title {
 		margin-bottom: 20px;
 		font-weight: bold;
+	}
+
+	&__btn {
+		margin-top: 20px;
 	}
 }
 </style>
