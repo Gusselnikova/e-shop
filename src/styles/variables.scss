@@ -1,0 +1,14 @@
+@import '~vuetify/src/styles/styles';
+
+$container-max-width: 1440px;
+
+$primary: #0061D0;
+
+.link_normalize {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    color: $primary;
+  }
+}

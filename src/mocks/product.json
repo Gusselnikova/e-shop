@@ -1,0 +1,35 @@
+{
+  "sku": "1234567890",
+  "name": "Apple iPhone 11 Pro Max 256GB Space Gray",
+  "description": "<p>Brand New product in unopened original packaging.</p><p><span style=\"background-color: rgb(255, 255, 255);\"><ul><li>6.5-inch Super Retina XDR OLED display</li><li>Water and dust resistant (4 meters for up to 30 minutes, IP68)</li><li>Triple-camera system with 12MP Ultra Wide, Wide, and Telephoto cameras; Night mode, Portrait mode, and 4K video up to 60fps</li><li>12MP TrueDepth front camera with Portrait Mode, 4K video, and Slo-Mo</li><li>Face ID for secure authentication and Apple Pay</li><li>A13 Bionic chip with third-generation Neural Engine</li><li>Fast charge with 18W adapter included</li><li>Wireless charging</li><li>iOS 13 with Dark Mode, new tools for editing photos and video, and brand new privacy features</li></ul><p>*SIM Card Not Included*</p>",
+  "image": "apple-iphone-11-pro-max-256gb-space-gray-small.webp",
+  "price": 1234,
+  "qty": 491,
+  "slug": "apple-iphone-11-pro-max-256gb-space-gray",
+  "specifications": [
+    {
+      "label": "iPhone generation",
+      "value": "iPhone 11 Pro Max"
+    },
+    {
+      "label": "Release date",
+      "value": "2019"
+    },
+    {
+      "label": "Screen size",
+      "value": "10"
+    },
+    {
+      "label": "Color",
+      "value": "Space Gray"
+    },
+    {
+      "label": "Storage",
+      "value": "256GB"
+    },
+    {
+      "label": "Operating system",
+      "value": "iOS"
+    }
+  ]
+}

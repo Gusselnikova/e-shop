@@ -1,0 +1,14 @@
+{
+  "id": "1000",
+  "items": [
+    {
+      "image": "apple-iphone-11-pro-max-256gb-space-gray-small.webp",
+      "slug": "apple-iphone-11-pro-max-256gb-space-gray",
+      "name": "Apple iPhone 11 Pro Max 256GB Space Gray",
+      "price": 1234,
+      "qty_ordered": 491,
+      "sku": "1234567890"
+    }
+  ],
+  "total_price": 605894
+}
